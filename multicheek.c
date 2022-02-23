@@ -6,7 +6,7 @@
 /*   By: nhirzel <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 12:56:13 by nhirzel           #+#    #+#             */
-/*   Updated: 2022/02/23 13:43:27 by nhirzel          ###   ########.fr       */
+/*   Updated: 2022/02/23 16:54:09 by nhirzel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,8 @@ void	before_split(t_info *info, char *argv1)
 		info->list_a[i] = ft_atoi(spliter[i]);
 		i++;
 	}
+	while (nbr_arg > 0)
+		free(spliter[--nbr_arg]);
 	free(spliter);
 }
 

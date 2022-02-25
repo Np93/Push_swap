@@ -6,7 +6,7 @@
 /*   By: nhirzel <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 12:56:13 by nhirzel           #+#    #+#             */
-/*   Updated: 2022/02/23 16:54:09 by nhirzel          ###   ########.fr       */
+/*   Updated: 2022/02/25 15:37:01 by nhirzel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,11 @@ int	cheeck_letters(int argc, char **argv)
 				return (0);
 			}
 			j++;
+		}
+		if (ft_strchr(argv[i]) == 0)
+		{
+			write(1, "Error\n", 6);
+			return (0);
 		}
 		i++;
 	}

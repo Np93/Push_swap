@@ -6,7 +6,7 @@
 /*   By: nhirzel <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/28 21:10:04 by nhirzel           #+#    #+#             */
-/*   Updated: 2022/02/23 17:51:16 by nhirzel          ###   ########.fr       */
+/*   Updated: 2022/02/25 15:35:12 by nhirzel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -90,8 +90,8 @@ int	min_max_int(t_info *info, int argc, char **argv)
 		splity = ft_split(argv[1], ' ');
 		if (check_max(splity) == 0 || check_min(splity) == 0)
 			error_min_max(info, splity, argc);
-		while (i > 0)
-			free(splity[--i]);
+		while (++i < info->nbr_list_a)
+			free(splity[i]);
 	}
 	if (argc > 2)
 	{

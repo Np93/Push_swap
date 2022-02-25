@@ -6,7 +6,7 @@
 /*   By: nhirzel <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/12/28 21:13:47 by nhirzel           #+#    #+#             */
-/*   Updated: 2022/02/23 13:40:48 by nhirzel          ###   ########.fr       */
+/*   Updated: 2022/02/25 15:37:47 by nhirzel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,5 +62,6 @@ void	algo_four(t_info *info);
 void	algo_five(t_info *info);
 int		before_swap(t_info *info);
 void	all_is_free(t_info *info);
+int		ft_strchr(const char *str);
 
 #endif

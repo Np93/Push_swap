@@ -6,7 +6,7 @@
 /*   By: nhirzel <marvin@42lausanne.ch>             +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/23 12:50:03 by nhirzel           #+#    #+#             */
-/*   Updated: 2022/02/23 12:50:54 by nhirzel          ###   ########.fr       */
+/*   Updated: 2022/02/25 15:39:57 by nhirzel          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -77,4 +77,18 @@ char	**ft_split(char const *s, char c)
 		return (0);
 	tab = manqdelign(s, c, tab);
 	return (tab);
+}
+
+int	ft_strchr(const char *str)
+{
+	int	i;
+
+	i = 0;
+	while (str[i] != '\0')
+	{
+		if (str[i] != ' ')
+			return (1);
+		i++;
+	}
+	return (0);
 }
